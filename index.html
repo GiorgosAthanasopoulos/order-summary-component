@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Order summary card</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+
+            * {
+                font-family: "Red Hat Display", sans-serif;
+            }
+
+            body {
+                background-color: hsl(225, 100%, 94%);
+            }
+
+            div.card {
+                background-color: hsl(0, 0%, 100%);
+                border-radius: 25px;
+                width: 450px;
+                position: absolute;
+                transform: translateX(50%);
+            }
+
+            div.rest {
+                padding: 20px;
+                text-align: center;
+                color: hsl(224, 23%, 55%);
+            }
+
+            img.image {
+                content: url("./images/illustration-hero.svg");
+            }
+
+            h1.title {
+                color: hsl(223, 47%, 23%);
+            }
+
+            img.music {
+                content: url("./images/icon-music.svg");
+                height: 50px;
+            }
+
+            div.price-card {
+                display: flex;
+                flex-direction: row;
+            }
+
+            button.submit {
+                margin-top: 20px;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 5px 5px 5px grey;
+                padding: 10px;
+                width: 350px;
+                color: white;
+                background-color: hsl(245, 75%, 52%);
+            }
+
+            button.submit:hover {
+                opacity: 70%;
+                cursor: pointer;
+            }
+
+            a.cancel:hover {
+                cursor: pointer;
+                color: hsl(223, 47%, 23%);
+                font-weight: bolder;
+            }
+
+            a.change {
+                color: hsl(245, 75%, 52%);
+                text-decoration: underline;
+            }
+
+            a.change:hover {
+                cursor: pointer;
+                text-decoration: none;
+                opacity: 70%;
+            }
+
+            div.price-card-desc {
+                display: flex;
+                flex-direction: column;
+                height: 75px;
+            }
+
+            p.time,
+            p.price {
+                padding: 0;
+                margin: 0;
+            }
+
+            div.price-card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0px 25px;
+            }
+
+            a.change {
+                margin-top: 25px;
+            }
+
+            div.random-div {
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+            }
+
+            div.random-div * {
+                margin-right: 15px;
+            }
+
+            p.time {
+                color: hsl(223, 47%, 23%);
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img class="image" />
+            <div class="rest">
+                <h1 class="title">Order Summary</h1>
+                <p class="description">
+                    You can now listen to millions of songs, audiobooks, and
+                    podcasts on any device anywhere you like!
+                </p>
+                <div class="price-card">
+                    <div class="random-div">
+                        <img class="music" />
+                        <div class="price-card-desc">
+                            <p class="time">Annual Plan</p>
+                            <p class="price">$59.99/year</p>
+                        </div>
+                    </div>
+                    <a class="change">Change</a>
+                </div>
+                <button class="submit">Proceed to Payment</button>
+                <br />
+                <br />
+                <a class="cancel">Cancel Order</a>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.github.com/giorgosathanasopoulos"
+                >Giorgos Athanasopoulos</a
+            >.
+        </div>
+    </body>
+</html>
